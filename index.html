@@ -4,6 +4,34 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>Command Prompt</title>
+	<style>
+body {
+	background-color: black;
+	user-select: none;
+	cursor: none;
+}
+#input {
+	width: 100vh;
+	background-color: transparent;
+	border: transparent;
+	outline: none;
+	color: white;
+	font-family: blocky;
+	font-size: 25px;
+	color: green;
+}
+#txt {
+	color: white;
+	font-family: blocky;
+	font-size: 25px;
+	color: green;
+	cursor: none;
+}
+@font-face {
+	font-family: blocky;
+	src: url(zig.ttf);
+}
+</style>
 </head>
 <body>
 <div id="txt">
@@ -35,32 +63,5 @@ $(window).keypress(function(e) {
     }
 });
 </script>
-<style>
-body {
-	background-color: black;
-	user-select: none;
-	cursor: none;
-}
-#input {
-	width: 100vh;
-	background-color: transparent;
-	border: transparent;
-	outline: none;
-	color: white;
-	font-family: blocky;
-	font-size: 25px;
-	color: green;
-}
-#txt {
-	color: white;
-	font-family: blocky;
-	font-size: 25px;
-	color: green;
-	cursor: none;
-}
-@font-face {
-	font-family: blocky;
-	src: url(zig.ttf);
-}
-</style>
+
 </html>
