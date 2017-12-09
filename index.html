@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Command Prompt</title>
+</head>
+<body>
+<div id="txt">
+</div>
+<input id="input">
+</body>
+<script>
+echo("Command Prompt v0.1");
+echo("Made by Pufflegamerz");
+function echo(text) {
+	document.getElementById('txt').innerHTML += "<span>" + text + "</span>" + "<br>";
+}
+setInterval(function() {
+	$("#input").focus();
+},10);
+$(window).keypress(function(e) {
+    if (e.which === 13) {
+    	var input = document.getElementById("input").value;
+    	echo(input);
+    	if (input == "/version") {
+    		echo("Version 0.1");
+    	} else if (input == "/help") {
+    		echo("/version - Displays current version");
+    		echo("/time - Displays current time");
+    	} else {
+    		echo("Syntax error");
+    	}
+    	document.getElementById("input").value = "";
+    }
+});
+</script>
+<style>
+body {
+	background-color: black;
+	user-select: none;
+	cursor: none;
+}
+#input {
+	width: 100vh;
+	background-color: transparent;
+	border: transparent;
+	outline: none;
+	color: white;
+	font-family: blocky;
+	font-size: 25px;
+	color: green;
+}
+#txt {
+	color: white;
+	font-family: blocky;
+	font-size: 25px;
+	color: green;
+	cursor: none;
+}
+@font-face {
+	font-family: blocky;
+	src: url(zig.ttf);
+}
+</style>
+</html>
