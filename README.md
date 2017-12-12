@@ -1,2 +1,2 @@
-# CommandPrompt
-A simple command prompt
+# MSDOS
+MSDOS... emulated in your browser!
