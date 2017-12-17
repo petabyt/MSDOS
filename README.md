@@ -1,2 +1,2 @@
 # MSDOS
-MSDOS... emulated in your browser!
+Enjoy the nostalgia of MS-DOS... right in your browser!
