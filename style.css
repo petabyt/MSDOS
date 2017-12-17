@@ -5,7 +5,7 @@
     top: 0px;
     left: 0px;
     background-color: #0101AB;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 #qbasic p span:hover {
     background-color: black;
